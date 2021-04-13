@@ -56,7 +56,7 @@ li.dropdown{
     display:block;
 }
 
-@media only screen and (max-width: 767px){
+/* @media only screen and (max-width: 767px){
     .mytext{
         color:green;
     }
@@ -65,5 +65,42 @@ li.dropdown{
 @media only screen and (min-width: 768px){
     .mytext{
         color:red;
+    }
+} */
+
+ /* mobile size */
+@media only screen and (max-width: 579px){
+    .boxes{
+        width:100%;
+        height:200px;
+        background-color: red;
+        text-align: center;
+        color:white;
+    }
+}
+/* tablets */
+@media only screen and (min-width:580px) and (max-width: 768px){
+    .boxes{
+        width:50%;
+        height: 200px;
+        background-color: yellow;
+        display:inline-block;
+        float:left;
+        border: 4px solid white;
+        box-sizing:border-box;
+        text-align: center;
+    }
+}
+/* larger screens */
+@media only screen and (min-width: 769px){
+    .boxes{
+        width:25%;
+        height: 200px;
+        background-color: yellowgreen;
+        display:inline-block;
+        float:left;
+        border: 4px solid white;
+        box-sizing:border-box;
+        text-align: center;
     }
 }
