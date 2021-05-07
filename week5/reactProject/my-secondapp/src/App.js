@@ -3,6 +3,7 @@ import "./App.css";
 import BasicForm from "./components/BasicForm";
 import Counter from "./components/Counter";
 import Board from "./components/note/Board";
+import FormInput from "./components/note/FormInput";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,6 +28,7 @@ function App() {
 //   </div>
 }
         <Board />
+        <FormInput />
     </div>
   );
 }
