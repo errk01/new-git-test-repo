@@ -1,4 +1,4 @@
-/* header{
+header{
     position: fixed;
     background: rgb(213, 231, 168);
     top:0;
@@ -59,7 +59,7 @@ nav ul li{
         display:block;
     }
 }
- */
+
 
 
  .flex-container{
