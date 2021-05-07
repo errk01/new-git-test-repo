@@ -50,53 +50,53 @@
 
 //             console.log(selectAll)
 
-// let div = document.querySelector('div')
-// let a = document.querySelector('a')
+let div = document.querySelector('div')
+let a = document.querySelector('a')
 
-// console.log(a.href)
+console.log(a.href)
 
-// a.name = "new link"
-// a.innerHTML = "updated text"
-//  a.target ="_blank"
+a.name = "new link"
+a.innerHTML = "updated text"
+ a.target ="_blank"
 
-//  let del = document.querySelector('.first').remove()
+ let del = document.querySelector('.first').remove()
 
-//  console.log(del)
-// console.log(a.innerHTML)
-// console.log(div.innerHTML)
+ console.log(del)
+console.log(a.innerHTML)
+console.log(div.innerHTML)
 
-// let newLi = document.createElement('li')
-// newLi.innerHTML = 'item 4'
+let newLi = document.createElement('li')
+newLi.innerHTML = 'item 4'
 
-// let list = document.querySelector('ul')
-// list.appendChild(newLi)
+let list = document.querySelector('ul')
+list.appendChild(newLi)
 
-// let list = document.querySelector("#list");
+let list = document.querySelector("#list");
 
-// list.children[1].innerHTML = "Fair Trade Coffee";
+list.children[1].innerHTML = "Fair Trade Coffee";
 
-// list.children[3].remove();
+list.children[3].remove();
 
-// let newItem = document.createElement("li");
+let newItem = document.createElement("li");
 
-// newItem.innerHTML = "Cheese Whiz";
-// list.appendChild(newItem);
+newItem.innerHTML = "Cheese Whiz";
+list.appendChild(newItem);
 
-// list.innerHTML = "";
-// ["protein powder", "muscle milk", "power bars"].forEach(
-//   (val) => {
-//     let li = document.createElement("li")
-//     li.innerHTML = val
-//     list.appendChild(li)
-//   }
-// );
+list.innerHTML = "";
+["protein powder", "muscle milk", "power bars"].forEach(
+  (val) => {
+    let li = document.createElement("li")
+    li.innerHTML = val
+    list.appendChild(li)
+  }
+);
 
 
-// let newClass = list.children[1].className = "important"
+let newClass = list.children[1].className = "important"
 
-// console.log(newClass)
+console.log(newClass)
 
-// console.log(list)
+console.log(list)
 
 
 
@@ -109,6 +109,7 @@ el.addEventListener('click', function(event){
 el.addEventListener('mouseover', function(event){
     el.innerHTML = 'over';
 })
+
 
 document.querySelector('.outer').addEventListener('click', function(e){
     

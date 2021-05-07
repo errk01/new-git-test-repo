@@ -199,6 +199,29 @@ let result = add([1,2,3,4])
 console.log(result)
 
 
+let arr = ['a','b','c']
+
+let newArr = arr.map(i=>i)
+
+console.log(newArr)
+
+
+
+
+// map
+// filter
+// reduce
+
+
+
+
+
+
+
+// find       its not really used to offten
+// some       its not really used to offten
+
+
 
 
 

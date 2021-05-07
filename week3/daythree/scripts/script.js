@@ -224,84 +224,85 @@ Automatically pause the slideshow if it gets to the end of the photolist while p
 */
 
 
-let slideshow ={
-    photoList:['birds', 'puppies', 'rainbows', 'kittens', 'babies'],
-        currentIndex:0,
+// let slideshow ={
+//     photoList:['birds', 'puppies', 'rainbows', 'kittens', 'babies'],
+//         currentIndex:0,
 
-        nextPhoto: function(){
-            if(this.currentIndex < this.photoList.length -1){
-                this.currentIndex++;
-                console.log("Current photo is: "+ this.photoList[this.currentIndex])
-            }else{
-                console.log("end of slideshow")
-                this.pause();
-            }
-        },
-        prevPhoto: function(){
-            if(this.currentIndex > 0){
-                this.currentIndex--;
-                console.log("Current photo is: "+ this.photoList[this.currentIndex])
-            }else{
-                console.log("Start of slideshow")
-            }
-        },
-        currentPhoto:function(){
-            return this.photoList[this.currentIndex]
-        },
-        playInterval: null,
+//         nextPhoto: function(){
+//             if(this.currentIndex < this.photoList.length){
+               
+//                 console.log("Current photo is: "+ this.photoList[this.currentIndex])
+//                 this.currentIndex++;
+//             }else{
+//                 console.log("end of slideshow")
+//                 this.pause();
+//             }
+//         },
+//         prevPhoto: function(){
+//             if(this.currentIndex > 0){
+//                 this.currentIndex--;
+//                 console.log("Current photo is: "+ this.photoList[this.currentIndex])
+//             }else{
+//                 console.log("Start of slideshow")
+//             }
+//         },
+//         currentPhoto:function(){
+//             return this.photoList[this.currentIndex]
+//         },
+//         playInterval: null,
 
-        play: function(){
-            let self = this;
-            this.playInterval = setInterval(function(){self.nextPhoto()}, 2000)
-        },
-        pause: function(){
-            clearInterval(this.playInterval)
-        }
-
-}
-
-slideshow.play()
-
-
-// let slideshow = {
-//     photoList: ['birds', 'puppies', 'rainbows', 'kittens', 'babies'],
-
-//     currentPhotoIndex: 0,
-
-//     nextPhoto: function() {
-//         if(this.currentPhotoIndex < this.photoList.length - 1) {
-//             this.currentPhotoIndex++;
-//             console.log('currentPhoto is: '+ this.photoList[this.currentPhotoIndex]);
-//         } else {
-//             console.log('End of Slideshow');
-//               this.pause();
+//         play: function(){
+//             let self = this;
+//             this.playInterval = setInterval(function(){self.nextPhoto()}, 2000)
+//         },
+//         pause: function(){
+//             clearInterval(this.playInterval)
 //         }
-//     },
-
-//     prevPhoto: function() {
-//         if(this.currentPhotoIndex > 0) {
-//             this.currentPhotoIndex--;
-//             console.log('currentPhoto is: ' + this.photoList[this.currentPhotoIndex]);
-//         } else {
-//             console.log('Start of Slideshow');
-            
-//         }
-//     },
-
-//     getCurrentPhoto: function() {
-//         return this.photoList[this.currentPhotoIndex];  
-//     },
-
-//     playInterval: null,
-
-//     play: function() {
-//         let self = this;
-//         this.playInterval = setInterval(function(){self.nextPhoto()}, 2000)
-//     },
-
-//     pause: function() {
-//         clearInterval(this.playInterval);
-//     }
 
 // }
+
 // slideshow.play()
+
+
+let slideshow = {
+    photoList: ['birds', 'puppies', 'rainbows', 'kittens', 'babies'],
+
+    currentPhotoIndex: 0,
+
+    nextPhoto: function() {
+        if(this.currentPhotoIndex < this.photoList.length - 1) {
+            this.currentPhotoIndex++;
+            console.log('currentPhoto is: '+ this.photoList[this.currentPhotoIndex]);
+        } else {
+            console.log('End of Slideshow');
+              this.pause();
+        }
+    },
+
+    prevPhoto: function() {
+        if(this.currentPhotoIndex > 0) {
+            this.currentPhotoIndex--;
+            console.log('currentPhoto is: ' + this.photoList[this.currentPhotoIndex]);
+        } else {
+            console.log('Start of Slideshow');
+            
+        }
+    },
+
+    getCurrentPhoto: function() {
+        return this.photoList[this.currentPhotoIndex];  
+    },
+
+    playInterval: null,
+
+    play: function() {
+        let self = this
+        this.playInterval = setInterval(function(){self.nextPhoto()}, 2000)
+    },
+
+    pause: function() {
+        clearInterval(this.playInterval);
+    }
+
+}
+slideshow.play()
