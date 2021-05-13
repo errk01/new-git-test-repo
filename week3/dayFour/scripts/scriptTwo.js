@@ -24,3 +24,10 @@ deleteButtons.forEach((button) => {
 function removeMe() {
   this.closest("li").remove(); // this is the button, from there you want to move up in DOM and find the closes <li> to remove
 }
+
+
+
+
+
+
+let let = 10;
