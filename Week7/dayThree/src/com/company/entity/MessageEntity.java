@@ -31,13 +31,15 @@ public class MessageEntity {
     }
 
     public String isRead() {
-        String str;
-        if(isRead){
-            str= "Online";
-        }else{
-            str = "Off line";
-        }
-        return str;
+
+        return (isRead) ? "Online":"Off line";
+//        String str;
+//        if(isRead){
+//            str= "Online";
+//        }else{
+//            str = "Off line";
+//        }
+//        return str;
     }
 
     public void setRead(boolean read) {
