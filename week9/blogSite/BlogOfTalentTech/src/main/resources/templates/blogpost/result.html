@@ -1,16 +1,36 @@
+<!--Results-->
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <!--<html xmlns:th="http://www.thymeleaf.org">-->
 <head>
     <title>Blog Site</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <div th:replace="/fragments/styling :: head-style" ></div>
 </head>
 <body>
-<h3>Blog Post Form</h3>
-<p>Thank you for your submission!</p>
-<h4>Blog Post:</h4>
-<p th:text="${title}"></p>
-<p th:text="${author}"></p>
-<p th:text="${blogEntry}"></p>
+<div th:replace="fragments/navbar :: navbar" ></div>
+<div class="container">
+    <h3>Blog Post Form</h3>
+    <p>Thank you for your submission!</p>
+    <h4>Blog Post:</h4>
+    <p th:text="${title}"></p>
+    <p th:text="${author}"></p>
+    <p th:text="${blogEntry}"></p>
+    <a th:href="@{/}">
+        <button class="btn btn-success">Back To Home Page</button>
+    </a>
+    <a th:href="@{/blog_posts/new}">
+        <button class="btn btn-primary">Submit a New Blog Post</button>
+    </a>
+
+</div>
+<form action="#" th:action="@{'/blogposts/delete/{id}'(id=${blogPost.id})}" th:method="delete"
+      class="form-horizontal">
+    <div class="form-group">
+        <input type="hidden" name="_method" value="delete"/>
+        <button type="submit" class="btn btn-danger btn-block" th:text="Delete">Delete</button>
+    </div>
+</form>
 </body>
+<div th:replace="/fragments/styling :: body-links" ></div>
 </html>
