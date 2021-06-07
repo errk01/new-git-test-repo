@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit a Blog</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Latest compiled and minified CSS -->
+    <div th:replace="/fragments/styling :: head-style" ></div></head>
+<body>
+<div th:replace="fragments/navbar :: navbar" ></div>
+<p>Please use the form below to submit a Blog Post:</p>
+<form action="#" th:action="@{~/blogposts/update/{id}(id=${blogPost.id})}" th:object="${blogPost}" method="post">
+    <table>
+        <tr>
+            <td>Title</td>
+            <td><input type="text" th:field="*{title}"/></td>
+        </tr>
+        <tr>
+            <td>Author:</td>
+            <td><input type="text" th:field="*{author}"/></td>
+        </tr>
+        <tr>
+            <td>Blog Entry:</td>
+            <td><input type="text" th:field="*{blogEntry}"/></td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">Submit Your Post</button>
+            </td>
+        </tr>
+    </table>
+    <a th:href="@{/}">
+        <button class="btn btn-success">Back To Home Page</button>
+    </a>
+    <a th:href="@{/blogposts/newBlogPosts}">
+        <button class="btn btn-primary">Submit a New Blog Post</button>
+    </a>
+</form>
+<div th:replace="/fragments/styling :: body-links" ></div>
+</body>
+</html>
