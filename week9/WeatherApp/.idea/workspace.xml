@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c95feb84-4351-4810-b4b0-bcebb523f0aa" name="Default Changelist" comment="WeatherAPI">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tts/weatherApp/controller/WeatherController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tts/weatherApp/model/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tts/weatherApp/model/Request.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tts/weatherApp/model/Response.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tts/weatherApp/service/WeatherService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +30,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -41,6 +38,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -63,6 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622553773235</updated>
       <workItem from="1622553774387" duration="9831000" />
+      <workItem from="1622565757333" duration="468000" />
     </task>
     <task id="LOCAL-00001" summary="WeatherAPI">
       <created>1622564084598</created>
@@ -71,7 +70,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622564084598</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="WeatherAPI">
+      <created>1622565883646</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622565883646</updated>
+    </task>
+    <task id="LOCAL-00003" summary="WeatherAPI">
+      <created>1622566063157</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622566063157</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +100,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="WeatherAPI" />
