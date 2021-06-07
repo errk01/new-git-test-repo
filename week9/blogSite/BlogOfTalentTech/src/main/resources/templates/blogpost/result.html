@@ -19,20 +19,17 @@
     <a th:href="@{/}">
         <button class="btn btn-success">Back To Home Page</button>
     </a>
-    <a th:href="@{/blog_posts/new}">
+    <a th:href="@{/blogposts/newBlogPost}">
         <button class="btn btn-primary">Submit a New Blog Post</button>
     </a>
 
 </div>
-<form action="#" th:action="@{'/blogposts/delete/{id}'(id=${blogPost.id})}" th:method="delete"
+<form action="#" th:action="@{/blogposts/deletePost/{id}(id=${blogPost.id})}" th:method="delete"
       class="form-horizontal">
     <div class="form-group">
         <input type="hidden" name="_method" value="delete"/>
         <button type="submit" class="btn btn-danger btn-block" th:text="Delete">Delete</button>
     </div>
-
-
-
 </form>
 </body>
 <div th:replace="/fragments/styling :: body-links" ></div>

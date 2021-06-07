@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<head>
+  <title>Blog Site</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <div th:replace="/fragments/styling :: head-style" ></div>
+</head>
+<body>
+
+<div class="row">
+  <div class="col-xl">
+    <h3>This post has been deleted.</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md">
+    <a href="/">
+      <button class="btn btn-primary">Return Home</button>
+    </a>
+    <a href="/blogposts/newBlogPost">
+      <button class="btn btn-secondary">Create Another Blog Post</button>
+    </a>
+  </div>
+</div>
+
+</body>
+<div th:replace="/fragments/styling :: body-links" ></div>
+</html>

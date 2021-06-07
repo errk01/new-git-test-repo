@@ -52,10 +52,10 @@ public class BlogPostController {
        return "blogpost/newBlogPost";
    }
 
-   @DeleteMapping(value = "/blogposts/{id}")
-   public String deletePostWithId(@PathVariable Long id){
+   @RequestMapping(value = "/blogposts/deletePost/{id}")
+   public String deletePostWithId(@PathVariable Long id, BlogPost blogPost){
        blogPostRepository.deleteById(id);
-       return "blogpost/delete";
+       return "blogpost/deletePost";
    }
     @RequestMapping(value = "/blogposts/{id}", method = RequestMethod.GET)
     public String editPostWithId(@PathVariable Long id,BlogPost blogPost, Model model){
