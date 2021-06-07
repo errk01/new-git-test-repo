@@ -26,9 +26,10 @@
                             <a href="#" th:href="@{blogposts/{id}(id=${blog.id})}">
                                 <button class="btn btn-light">Edit Post</button>
                             </a>
+                            <a href="#" th:href="@{blogposts/deletePost/{id}(id=${blog.id})}">
+                                <button class="btn btn-danger" type="submit">Delete Post</button>
+                            </a>
                         </div>
-                        <!-- Link to Show  -->
-                        <!--  Link to Destroy -->
                     </div>
                 </div>
             </div>
